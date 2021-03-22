@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Chat</title>
@@ -8,7 +9,8 @@
         下記を参考に、改良。
         https://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space -->
     <style type="text/css">
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
         }
@@ -51,14 +53,21 @@
         }
     </style>
 </head>
+
 <body>
     <div id="wrapper">
         <h1>Chat</h1>
+        <div id="note">
+            ※メモ<br>
+            データベースのテスト用バージョン。アプリとの通信は一部不可<br>
+            同一のニックネームでも毎回新しいidが割り当てられる
+        </div>
 
         <div id="lower-area">
             <div id="join-screen">
                 <form id="join-form" action="">
-                    ニックネーム : <input type="text" id="input_nickname" autocomplete="off" /><button type="submit">Join</button>
+                    input your nickname : <input type="text" id="input_nickname" autocomplete="off" /><button
+                        type="submit">Join</button>
                 </form>
             </div>
 
@@ -66,7 +75,12 @@
                 <form id="chat-form" action="">
                     ニックネーム : <span id="nickname"></span>
                     <br />
-                    メッセージ : <input type="text" id="input_message" autocomplete="off" /><button type="submit">Send</button>
+                    メッセージ : <input type="text" id="input_message" autocomplete="off" /><button
+                        type="submit">Send</button>
+                </form>
+                <form id="user-search-form" action="">
+                    id検索 : <input type="number" id="input_id" autocomplete="off" placeholder="idを入力して名前を検索" /><button
+                        type="submit">Search</button>
                 </form>
                 <ul id="message_list"></ul>
             </div>
@@ -77,4 +91,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="client.js"></script>
 </body>
+
 </html>
