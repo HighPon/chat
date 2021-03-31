@@ -1,0 +1,65 @@
+@charset "utf-8";
+body {
+    font-size: 125%;
+    background: #fff0f0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    margin-bottom: 20px;
+	padding: 10px;
+	font-size: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    transition: .3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    border-color: #c091ff;
+    background-color: #f5f0ff;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 90%;
+}
+
+section.center-form {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 1em;
+    padding: 1em 6em;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -25%)
+}
+
+input[type="submit"]{
+    line-height: 1.0em;
+}
+
+.common-button{
+    display       : inline-block;
+    font-size: 110%;
+    border-radius : 50% / 100%;
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 12px;   /* 余白       */
+    background    : #d5b5ff;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 0px solid #d5b5ff;    /* 枠の指定 */
+}
+
+.common-button:hover{
+    background : #c091ff;
+}
