@@ -11,10 +11,10 @@ const app = express();
 const server = http.Server(app);
 const io = socketIO(server);
 const connection = mysql.createConnection({
-    host: '127.0.0.1',
-    user: 'chat',
-    password: 'password',
-    database: 'chat'
+    host: 'us-cdbr-east-03.cleardb.com',
+    user: 'b8a5270bacec1d',
+    password: 'c72d8b38',
+    database: 'heroku_959a3c5f9e441b9'
 });
 
 // 定数
