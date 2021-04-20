@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=360,initial-scale=1">
+        <link rel="stylesheet" href="test.css">
+        <title>Title</title>
+        <script type="text/javascript">
+            function check_textarea(){
+                if(message.value==""){
+                    document.getElementById("submitbtn").disabled = true;
+                }else{
+                    document.getElementById("submitbtn").disabled = false;
+                }
+            }
+        </script> <!-- ここにスクリプト読み込み -->
+    </head>
+    <body>
+        <h1>Chat Test</h1>
+        <div>
+            <form method="POST" action="" name="messageform">
+                <textarea class="message" id="message" name="message" placeholder="Message..." oninput="check_textarea()" /></textarea>
+                <input type="submit" value="submit" id="submitbtn" disabled>
+            </form>
+        </div>
+    </body>
+</html>
